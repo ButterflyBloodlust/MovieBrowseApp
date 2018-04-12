@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/row_bg_grad"
+    android:orientation="horizontal"
+    android:minHeight="80dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/ic_person_black_50dp">
+    </ImageView>
+
+    <!-- Name and surname-->
+    <TextView
+        android:id="@+id/name_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_toRightOf="@+id/list_image"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="21sp" />
+    <!-- -->
+
+    <!-- Age -->
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_surname"
+        android:textColor="#343434"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/list_image"
+        android:textSize="21sp"/>
+
+    <!-- Rightend Minus -->
+    <!--
+    <ImageButton
+        android:id="@+id/delete_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_remove_circle_outline_black_50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_remove_circle_outline_black_50dp"/>
+    -->
+    <!-- android:layout_centerVertical="true" -->
+</RelativeLayout>
